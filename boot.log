@@ -1,0 +1,184 @@
+[   1.0000000] NetBSD/evbarm (fdt) booting ...
+[   1.0000000] [ Kernel symbol table missing! ]
+PSCI: no /psci node found
+arm_fdt_cpu_mpstart: failed to enable CPU 0x1
+[   1.0000000] Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+[   1.0000000]     2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+[   1.0000000]     2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+[   1.0000000]     2024
+[   1.0000000]     The NetBSD Foundation, Inc.  All rights reserved.
+[   1.0000000] Copyright (c) 1982, 1986, 1989, 1991, 1993
+[   1.0000000]     The Regents of the University of California.  All rights reserved.
+
+[   1.0000000] NetBSD 10.0 (GENERIC) #16: Tue Aug 27 08:40:55 CST 2024
+[   1.0000000]  rxg@picohive:/home/rxg/10.0/usr/obj.evbarm/sys/arch/evbarm/compile/GENERIC
+[   1.0000000] total memory = 1024 MB
+[   1.0000000] avail memory = 988 MB
+[   1.0000000] armfdt0 (root)
+[   1.0000000] simplebus0 at armfdt0: RIoTboard i.MX6S
+[   1.0000000] simplebus1 at simplebus0
+[   1.0000000] cpus0 at simplebus0
+[   1.0000000] simplebus2 at simplebus0
+[   1.0000000] simplebus3 at simplebus0
+[   1.0000000] cpu0 at cpus0: Cortex-A9 r2p10 (Cortex V7A core)
+[   1.0000000] cpu0: DC enabled IC enabled WB enabled LABT branch prediction enabled
+[   1.0000000] cpu0: L1 32KB/32B 4-way (256 set) VIPT Instruction cache
+[   1.0000000] cpu0: L1 32KB/32B 4-way (256 set) write-back-locking-C PIPT Data cache
+[   1.0000000] cpu0: L2 512KB/32B 16-way (1024 set) write-back-locking-D PIPT Unified cache
+[   1.0000000] vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+[   1.0000000] cpufreqdt0 at cpu0
+[   1.0000000] cpu1 at cpus0: disabled (unresponsive)
+[   1.0000000] cpufreqdt1 at cpu1
+[   1.0000000] simplebus4 at simplebus1
+[   1.0000000] simplebus5 at simplebus1
+[   1.0000000] simplebus6 at simplebus4
+[   1.0000000] syscon0 at simplebus4: System Controller Registers
+[   1.0000000] imx6ccm0 at simplebus4: Clock Control Module
+[   1.0000000] gic0 at simplebus1: GIC
+[   1.0000000] armgic0 at gic0: Generic Interrupt Controller, 160 sources (149 valid)
+[   1.0000000] armgic0: 32 Priorities, 128 SPIs, 5 PPIs, 16 SGIs
+[   1.0000000] syscon1 at simplebus4: System Controller Registers
+[   1.0000000] imxsnvs0 at simplebus4: Secure Non-Volatile Storage
+[   1.0000000] fclock0 at simplebus3: 32768 Hz fixed clock (ckil)
+[   1.0000000] fclock1 at simplebus3: 0 Hz fixed clock (ckih1)
+[   1.0000000] fclock2 at simplebus3: 24000000 Hz fixed clock (osc)
+[   1.0000000] imxgpc0 at simplebus4: General Power Controller
+[   1.0000000] imxocotp0 at simplebus5: On-Chip OTP Controller
+[   1.0000000] imxocotp0: OCOTP_VERSION 2.0.0
+[   1.0000000] l2cc0 at simplebus1
+[   1.0000000] arml2cc0 at l2cc0: ARM PL310 r3p2 L2 Cache Controller (disabled)
+[   1.0000000] arml2cc0: cache enabled
+[   1.0000000] a9ptmr0 at simplebus1
+[   1.0000000] a9ptmr0: interrupting on GIC irq 29
+[   1.0000000] arma9ptmr0 at a9ptmr0: A9 Private Timer (396 MHz)
+[   1.0000000] imxgpio0 at simplebus4: GPIO (gpio@209c000)
+[   1.0000000] imxgpio0: interrupting on irq 98
+[   1.0000000] imxgpio0: interrupting on irq 99
+[   1.0000000] imxgpio0: interrupts 160..191
+[   1.0000000] gpio0 at imxgpio0: 32 pins
+[   1.0000000] imxgpio1 at simplebus4: GPIO (gpio@20a4000)
+[   1.0000000] imxgpio1: interrupting on irq 102
+[   1.0000000] imxgpio1: interrupting on irq 103
+[   1.0000000] imxgpio1: interrupts 192..223
+[   1.0000000] gpio1 at imxgpio1: 32 pins
+[   1.0000000] imxgpio2 at simplebus4: GPIO (gpio@20b4000)
+[   1.0000000] imxgpio2: interrupting on irq 110
+[   1.0000000] imxgpio2: interrupting on irq 111
+[   1.0000000] imxgpio2: interrupts 224..255
+[   1.0000000] gpio2 at imxgpio2: 32 pins
+[   1.0000000] imxgpio3 at simplebus4: GPIO (gpio@20ac000)
+[   1.0000000] imxgpio3: interrupting on irq 106
+[   1.0000000] imxgpio3: interrupting on irq 107
+[   1.0000000] imxgpio3: interrupts 256..287
+[   1.0000000] gpio3 at imxgpio3: 32 pins
+[   1.0000000] imxgpio4 at simplebus4: GPIO (gpio@20a0000)
+[   1.0000000] imxgpio4: interrupting on irq 100
+[   1.0000000] imxgpio4: interrupting on irq 101
+[   1.0000000] imxgpio4: interrupts 288..319
+[   1.0000000] gpio4 at imxgpio4: 32 pins
+[   1.0000000] imxgpio5 at simplebus4: GPIO (gpio@20a8000)
+[   1.0000000] imxgpio5: interrupting on irq 104
+[   1.0000000] imxgpio5: interrupting on irq 105
+[   1.0000000] imxgpio5: interrupts 320..351
+[   1.0000000] gpio5 at imxgpio5: 32 pins
+[   1.0000000] imxgpio6 at simplebus4: GPIO (gpio@20b0000)
+[   1.0000000] imxgpio6: interrupting on irq 108
+[   1.0000000] imxgpio6: interrupting on irq 109
+[   1.0000000] imxgpio6: interrupts 352..383
+[   1.0000000] gpio6 at imxgpio6: 32 pins
+[   1.0000000] imxi2c0 at simplebus5
+[   1.0000000] iic0 at imxi2c0: I2C bus
+[   1.0000000] imxi2c1 at simplebus5
+[   1.0000000] iic1 at imxi2c1: I2C bus
+[   1.0000000] sgtl5000 (fsl,sgtl5000) at iic1 addr 0x0a not configured
+[   1.0000000] pf0100 (fsl,pfuze100) at iic1 addr 0x08 not configured
+[   1.0000000] imxuart0 at simplebus6, 80000000 Hz
+[   1.0000000] imxuart0: interrupting on irq 58
+[   1.0000000] imxuart1 at simplebus5, 80000000 Hz
+[   1.0000000] imxuart1: interrupting on irq 59
+[   1.0000000] imxuart1: console
+[   1.0000000] imxuart2 at simplebus5, 80000000 Hz
+[   1.0000000] imxuart2: interrupting on irq 60
+[   1.0000000] imxuart3 at simplebus5, 80000000 Hz
+[   1.0000000] imxuart3: interrupting on irq 61
+[   1.0000000] imxuart4 at simplebus5, 80000000 Hz
+[   1.0000000] imxuart4: interrupting on irq 62
+[   1.0000000] imxi2c2 at simplebus5
+[   1.0000000] iic2 at imxi2c2: I2C bus
+[   1.0000000] fregulator0 at simplebus0: usb_otg_vbus
+[   1.0000000] fregulator1 at simplebus0: 3P3V
+[   1.0000000] fregulator2 at simplebus0: 2P5V
+[   1.0000000] imxusbphy0 at simplebus4: USB PHY
+[   1.0000000] imxusbphy1 at simplebus4: USB PHY
+[   1.0000000] usbnopphy0 at simplebus0: USB PHY
+[   1.0000000] usbnopphy1 at simplebus0: USB PHY
+[   1.0000000] /soc/ipu@2400000 at simplebus1 not configured
+[   1.0000000] /soc/dma-apbh@110000 at simplebus1 not configured
+[   1.0000000] /soc/bus@2000000/sdma@20ec000 at simplebus4 not configured
+[   1.0000000] /soc/bus@2000000/pinctrl@20e0000 at simplebus4 not configured
+[   1.0000000] /soc/bus@2000000/reset-controller@20d8000 at simplebus4 not configured
+[   1.0000000] /soc/sram@900000 at simplebus1 not configured
+[   1.0000000] /soc/bus@2000000/anatop@20c8000/regulator-vddpu at syscon1 not configured
+[   1.0000000] /soc/bus@2000000/iomuxc-gpr@20e0000/mux-controller at syscon0 not configured
+[   1.0000000] /soc/bus@2100000/usbmisc@2184800 at simplebus5 not configured
+[   1.0000000] enet0 at simplebus5: Gigabit Ethernet Controller
+[   1.0000000] enet0: interrupting on irq 166 (gpio-1 6)
+[   1.0000000] enet0: couldn't find phy reset gpios
+[   1.0000000] enet0: cannot get mac address. set randomly
+[   1.0000000] enet0: Ethernet address 00:00:41:a7:3a:f1
+[   1.0000000] atphy0 at enet0 phy 4: Atheros AR8035 10/100/1000 PHY, rev. 2
+[   1.0000000] atphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseSX-FDX, 1000baseT-FDX, auto
+[   1.0000000] /soc/bus@2000000/iomuxc-gpr@20e0000/ipu1_csi0_mux at syscon0 not configured
+[   1.0000000] /soc/bus@2000000/iomuxc-gpr@20e0000/ipu1_csi1_mux at syscon0 not configured
+[   1.0000000] dwhdmi0 at simplebus1: HDMI TX
+[   1.0000000] dwhdmi0: version 1.31a, phytype 0xf2
+[   1.0000000] /soc/bus@2000000/anatop@20c8000/regulator-vddcore at syscon1 not configured
+[   1.0000000] /soc/bus@2000000/anatop@20c8000/regulator-vddsoc at syscon1 not configured
+[   1.0000000] /soc/bus@2000000/spba-bus@2000000/ssi@2028000 at simplebus6 not configured
+[   1.0000000] armpmu0 at simplebus0: Performance Monitor Unit
+[   1.0000000] /soc/gpu@130000 at simplebus1 not configured
+[   1.0000000] /soc/gpu@134000 at simplebus1 not configured
+[   1.0000000] /soc/bus@2000000/spba-bus@2000000/asrc@2034000 at simplebus6 not configured
+[   1.0000000] /soc/bus@2000000/vpu@2040000 at simplebus4 not configured
+[   1.0000000] imxpwm0 at simplebus4imxpwm0: interrupting on irq 115
+[   1.0000000] imxpwm1 at simplebus4imxpwm1: interrupting on irq 116
+[   1.0000000] imxpwm2 at simplebus4imxpwm2: interrupting on irq 117
+[   1.0000000] imxpwm3 at simplebus4imxpwm3: interrupting on irq 118
+[   1.0000000] /soc/bus@2000000/timer@2098000 at simplebus4 not configured
+[   1.0000000] imxwdog0 at simplebus4: i.MX Watchdog Timer, default period is 10 seconds
+[   1.0000000] /soc/bus@2000000/anatop@20c8000/regulator-1p1 at syscon1 not configured
+[   1.0000000] /soc/bus@2000000/anatop@20c8000/regulator-3p0 at syscon1 not configured
+[   1.0000000] /soc/bus@2000000/anatop@20c8000/regulator-2p5 at syscon1 not configured
+[   1.0000000] /soc/bus@2000000/anatop@20c8000/tempmon at syscon1 not configured
+[   1.0000000] /soc/bus@2100000/crypto@2100000 at simplebus5 not configured
+[   1.0000000] imxusbc0 at simplebus5
+[   1.0000000] ehci0 at imxusbc0 unit 0: i.MX USB Controller
+[   1.0000000] ehci0: id=5 revision=1 HCI revision=0x100
+[   1.0000000] ehci0: 1 host port, device capable, 8 endpoints
+[   1.0000000] ehci0: interrupting on irq 75
+[   1.0000000] usb0 at ehci0: USB revision 2.0
+[   1.0000000] imxusbc1 at simplebus5
+[   1.0000000] ehci1 at imxusbc1 unit 1: i.MX USB Controller
+[   1.0000000] ehci1: id=5 revision=1 HCI revision=0x100
+[   1.0000000] ehci1: 1 host port
+[   1.0000000] ehci1: interrupting on irq 72
+[   1.0000000] usb1 at ehci1: USB revision 2.0
+[   1.0000000] sdhc0 at simplebus5: SDMMC (198000 kHz)
+[   1.0000000] sdhc0: interrupting on irq 55
+[   1.0000000] sdhc0: SDHC 3.0, rev 0, 32-bit ADMA2, 198000 kHz, HS SDR50 DDR50 1.8V 3.0V 3.3V, re-tuning mode 1, 4096 byte blocks
+[   1.0000000] sdmmc0 at sdhc0 slot 0
+[   1.0000000] sdhc1 at simplebus5: SDMMC (198000 kHz)
+[   1.0000000] sdhc1: interrupting on irq 56
+[   1.0000000] sdhc1: SDHC 3.0, rev 0, 32-bit ADMA2, 198000 kHz, HS SDR50 DDR50 1.8V 3.0V 3.3V, re-tuning mode 1, 4096 byte blocks
+[   1.0000000] sdmmc1 at sdhc1 slot 0
+[   1.0000000] sdhc2 at simplebus5: SDMMC (198000 kHz)
+[   1.0000000] sdhc2: interrupting on irq 57
+[   1.0000000] sdhc2: SDHC 3.0, rev 0, 32-bit ADMA2, 198000 kHz, HS SDR50 DDR50 1.8V 3.0V 3.3V, re-tuning mode 1, 4096 byte blocks
+[   1.0000000] sdmmc2 at sdhc2 slot 0
+[   1.0000000] /soc/bus@2100000/memory-controller@21b0000 at simplebus5 not configured
+[   1.0000000] /soc/bus@2100000/audmux@21d8000 at simplebus5 not configured
+[   1.0000000] gpioleds0 at simplebus0: user1 user2
+[   1.0000000] /capture-subsystem at simplebus0 not configured
+[   1.0000000] /display-subsystem at simplebus0 not configured
+[   1.0000000] /sound at simplebus0 not configured
+[   1.0000000] /soc/bus@2100000/vdoa@21e4000 at simplebus5 not configured

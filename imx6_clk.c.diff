@@ -1,0 +1,24 @@
+Index: sys/arch/arm/nxp/imx6_clk.c
+===================================================================
+RCS file: /cvsroot/src/sys/arch/arm/nxp/imx6_clk.c,v
+retrieving revision 1.4.4.1
+diff -r1.4.4.1 imx6_clk.c
+620c620
+< 	{ IMX6QCLK_CKIH,		"ckih" },
+---
+> 	{ IMX6QCLK_CKIH,		"ckih1" },
+891c891
+< 	CLK_FIXED("ckih", IMX6_CKIH_FREQ),
+---
+> 	CLK_FIXED("ckih1", IMX6_CKIH_FREQ),
+1267c1267
+< 	int phandle = OF_finddevice("/soc/aips-bus/anatop");
+---
+> 	int phandle = OF_finddevice("/soc/bus/anatop");
+1292c1292
+< 	imx6q_clk_fixed_from_fdt(sc, "ckih");
+---
+> 	imx6q_clk_fixed_from_fdt(sc, "ckih1");
+1294,1295d1293
+< 	imx6q_clk_fixed_from_fdt(sc, "anaclk1");
+< 	imx6q_clk_fixed_from_fdt(sc, "anaclk2");
