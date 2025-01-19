@@ -1,0 +1,15 @@
+Index: sys/arch/arm/nxp/imx6_iomux.c
+===================================================================
+RCS file: /cvsroot/src/sys/arch/arm/nxp/imx6_iomux.c,v
+retrieving revision 1.2.18.1
+diff -u -p -r1.2.18.1 imx6_iomux.c
+--- sys/arch/arm/nxp/imx6_iomux.c	28 May 2023 10:14:35 -0000	1.2.18.1
++++ sys/arch/arm/nxp/imx6_iomux.c	19 Jan 2025 01:12:08 -0000
+@@ -130,6 +130,7 @@ CFATTACH_DECL_NEW(imxiomux, sizeof(struc
+     imxiomux_match, imxiomux_attach, NULL, NULL);
+ 
+ static const struct device_compatible_entry compat_data[] = {
++	{ .compat = "fsl,imx6dl-iomuxc" },
+ 	{ .compat = "fsl,imx6q-iomuxc" },
+ 	{ .compat = "fsl,imx6sx-iomuxc" },
+ 	{ .compat = "fsl,imx7d-iomuxc" },
